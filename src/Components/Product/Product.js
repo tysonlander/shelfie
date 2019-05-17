@@ -5,9 +5,14 @@ class Product extends Component {
   constructor(){
     super()
     this.state = {
-
+      
     }
   }
+
+  // methods
+  // handlechange - one for each input 
+  // post new product to database
+  // clear input boxes
 
   render(){
     return(
