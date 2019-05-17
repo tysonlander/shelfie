@@ -27,6 +27,14 @@ class Form extends Component {
     })
   }
 
+  handleCancel = () => {
+    this.setState({
+      imgurl: '',
+      name: '',
+      price: 0
+    })
+  }
+
   render(){
     return(
       <div>
@@ -51,7 +59,7 @@ class Form extends Component {
           onChange={(e) => this.handlePrice(e.target.value)}
           value={this.state.price}
         />
-        <button>Cancel</button>
+        <button onClick={this.handleCancel}>Cancel</button>
         <button>Add to Inventory</button>
       </div>
     )
