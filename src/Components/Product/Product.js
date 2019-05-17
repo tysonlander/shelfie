@@ -2,8 +2,8 @@ import React, {Component} from 'react'
 // import axios from 'axios'
 
 class Product extends Component {
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
     this.state = {
       
     }
@@ -17,7 +17,9 @@ class Product extends Component {
   render(){
     return(
       <div>
-        <h1>Product</h1>
+        <img src={this.props.product.imgurl} alt='product'/>
+        <h2>{this.props.product.name}</h2>
+        <h2>{this.props.product.price}</h2>
       </div>
     )
   }

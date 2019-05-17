@@ -12,3 +12,5 @@ massive(CONNECTION_STRING).then((database) => {
   console.log("hello dog")
   app.listen(SERVER_PORT, () => console.log(`spinning up on ${SERVER_PORT}`))
 })
+
+app.get('/api/inventory', shelfie_ctrl.getAllInventory)
